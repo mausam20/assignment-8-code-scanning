@@ -1,0 +1,1943 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2023-44271",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-pillow: uncontrolled resource consumption when textlength in an ImageDraw instance operates on a long text argument"
+              },
+              "fullDescription": {
+                "text": "An issue was discovered in Pillow before 10.0.0. It is a Denial of Service that uncontrollably allocates memory to process a given task, potentially causing a service to crash by having it run out of memory. This occurs for truetype in ImageFont when textlength in an ImageDraw instance operates on a long text argument."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-44271",
+              "help": {
+                "text": "Vulnerability CVE-2023-44271\nSeverity: HIGH\nPackage: Pillow\nFixed Version: 10.0.0\nLink: [CVE-2023-44271](https://avd.aquasec.com/nvd/cve-2023-44271)\nAn issue was discovered in Pillow before 10.0.0. It is a Denial of Service that uncontrollably allocates memory to process a given task, potentially causing a service to crash by having it run out of memory. This occurs for truetype in ImageFont when textlength in an ImageDraw instance operates on a long text argument.",
+                "markdown": "**Vulnerability CVE-2023-44271**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Pillow|10.0.0|[CVE-2023-44271](https://avd.aquasec.com/nvd/cve-2023-44271)|\n\nAn issue was discovered in Pillow before 10.0.0. It is a Denial of Service that uncontrollably allocates memory to process a given task, potentially causing a service to crash by having it run out of memory. This occurs for truetype in ImageFont when textlength in an ImageDraw instance operates on a long text argument."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-4863",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "libwebp: Heap buffer overflow in WebP Codec"
+              },
+              "fullDescription": {
+                "text": "Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-4863",
+              "help": {
+                "text": "Vulnerability CVE-2023-4863\nSeverity: HIGH\nPackage: Pillow\nFixed Version: 10.0.1\nLink: [CVE-2023-4863](https://avd.aquasec.com/nvd/cve-2023-4863)\nHeap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)",
+                "markdown": "**Vulnerability CVE-2023-4863**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Pillow|10.0.1|[CVE-2023-4863](https://avd.aquasec.com/nvd/cve-2023-4863)|\n\nHeap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-50447",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "pillow: Arbitrary Code Execution via the environment parameter"
+              },
+              "fullDescription": {
+                "text": "Pillow through 10.1.0 allows PIL.ImageMath.eval Arbitrary Code Execution via the environment parameter, a different vulnerability than CVE-2022-22817 (which was about the expression parameter)."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-50447",
+              "help": {
+                "text": "Vulnerability CVE-2023-50447\nSeverity: HIGH\nPackage: Pillow\nFixed Version: 10.2.0\nLink: [CVE-2023-50447](https://avd.aquasec.com/nvd/cve-2023-50447)\nPillow through 10.1.0 allows PIL.ImageMath.eval Arbitrary Code Execution via the environment parameter, a different vulnerability than CVE-2022-22817 (which was about the expression parameter).",
+                "markdown": "**Vulnerability CVE-2023-50447**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Pillow|10.2.0|[CVE-2023-50447](https://avd.aquasec.com/nvd/cve-2023-50447)|\n\nPillow through 10.1.0 allows PIL.ImageMath.eval Arbitrary Code Execution via the environment parameter, a different vulnerability than CVE-2022-22817 (which was about the expression parameter)."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.1",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-56pw-mpj4-fxww",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Bundled libwebp in Pillow vulnerable"
+              },
+              "fullDescription": {
+                "text": "Pillow versions before v10.0.1 bundled libwebp binaries in wheels that are vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades the bundled libwebp binary to v1.3.2."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://github.com/advisories/GHSA-56pw-mpj4-fxww",
+              "help": {
+                "text": "Vulnerability GHSA-56pw-mpj4-fxww\nSeverity: HIGH\nPackage: Pillow\nFixed Version: 10.0.1\nLink: [GHSA-56pw-mpj4-fxww](https://github.com/advisories/GHSA-56pw-mpj4-fxww)\nPillow versions before v10.0.1 bundled libwebp binaries in wheels that are vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades the bundled libwebp binary to v1.3.2.",
+                "markdown": "**Vulnerability GHSA-56pw-mpj4-fxww**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Pillow|10.0.1|[GHSA-56pw-mpj4-fxww](https://github.com/advisories/GHSA-56pw-mpj4-fxww)|\n\nPillow versions before v10.0.1 bundled libwebp binaries in wheels that are vulnerable to CVE-2023-5129 (previously CVE-2023-4863). Pillow v10.0.1 upgrades the bundled libwebp binary to v1.3.2."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-28219",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-pillow: buffer overflow in _imagingcms.c"
+              },
+              "fullDescription": {
+                "text": "In _imagingcms.c in Pillow before 10.3.0, a buffer overflow exists because strcpy is used instead of strncpy."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-28219",
+              "help": {
+                "text": "Vulnerability CVE-2024-28219\nSeverity: MEDIUM\nPackage: Pillow\nFixed Version: 10.3.0\nLink: [CVE-2024-28219](https://avd.aquasec.com/nvd/cve-2024-28219)\nIn _imagingcms.c in Pillow before 10.3.0, a buffer overflow exists because strcpy is used instead of strncpy.",
+                "markdown": "**Vulnerability CVE-2024-28219**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|Pillow|10.3.0|[CVE-2024-28219](https://avd.aquasec.com/nvd/cve-2024-28219)|\n\nIn _imagingcms.c in Pillow before 10.3.0, a buffer overflow exists because strcpy is used instead of strncpy."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.7",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-20477",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "PyYAML: command execution through python/object/apply constructor in FullLoader"
+              },
+              "fullDescription": {
+                "text": "PyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2019-20477",
+              "help": {
+                "text": "Vulnerability CVE-2019-20477\nSeverity: CRITICAL\nPackage: PyYAML\nFixed Version: 5.2\nLink: [CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)\nPyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342.",
+                "markdown": "**Vulnerability CVE-2019-20477**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|PyYAML|5.2|[CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)|\n\nPyYAML 5.1 through 5.1.2 has insufficient restrictions on the load and load_all functions because of a class deserialization issue, e.g., Popen is a class in the subprocess module. NOTE: this issue exists because of an incomplete fix for CVE-2017-18342."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-14343",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "PyYAML: incomplete fix for CVE-2020-1747"
+              },
+              "fullDescription": {
+                "text": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-14343",
+              "help": {
+                "text": "Vulnerability CVE-2020-14343\nSeverity: CRITICAL\nPackage: PyYAML\nFixed Version: 5.4\nLink: [CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)\nA vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",
+                "markdown": "**Vulnerability CVE-2020-14343**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|PyYAML|5.4|[CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)|\n\nA vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2020-1747",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "PyYAML: arbitrary command execution through python/object/new when FullLoader is used"
+              },
+              "fullDescription": {
+                "text": "A vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2020-1747",
+              "help": {
+                "text": "Vulnerability CVE-2020-1747\nSeverity: CRITICAL\nPackage: PyYAML\nFixed Version: 5.3.1\nLink: [CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)\nA vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor.",
+                "markdown": "**Vulnerability CVE-2020-1747**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|PyYAML|5.3.1|[CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)|\n\nA vulnerability was discovered in the PyYAML library in versions before 5.3.1, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. An attacker could use this flaw to execute arbitrary code on the system by abusing the python/object/new constructor."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-25577",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-werkzeug: high resource usage when parsing multipart form data with many fields"
+              },
+              "fullDescription": {
+                "text": "Werkzeug is a comprehensive WSGI web application library. Prior to version 2.2.3, Werkzeug\u0026#39;s multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses `request.data`, `request.form`, `request.files`, or `request.get_data(parse_form_data=False)`, it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers. Version 2.2.3 contains a patch for this issue."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-25577",
+              "help": {
+                "text": "Vulnerability CVE-2023-25577\nSeverity: HIGH\nPackage: Werkzeug\nFixed Version: 2.2.3\nLink: [CVE-2023-25577](https://avd.aquasec.com/nvd/cve-2023-25577)\nWerkzeug is a comprehensive WSGI web application library. Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses `request.data`, `request.form`, `request.files`, or `request.get_data(parse_form_data=False)`, it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers. Version 2.2.3 contains a patch for this issue.",
+                "markdown": "**Vulnerability CVE-2023-25577**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Werkzeug|2.2.3|[CVE-2023-25577](https://avd.aquasec.com/nvd/cve-2023-25577)|\n\nWerkzeug is a comprehensive WSGI web application library. Prior to version 2.2.3, Werkzeug's multipart form data parser will parse an unlimited number of parts, including file parts. Parts can be a small amount of bytes, but each requires CPU time to parse and may use more memory as Python data. If a request can be made to an endpoint that accesses `request.data`, `request.form`, `request.files`, or `request.get_data(parse_form_data=False)`, it can cause unexpectedly high resource usage. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. The amount of RAM required can trigger an out of memory kill of the process. Unlimited file parts can use up memory and file handles. If many concurrent requests are sent continuously, this can exhaust or kill all available workers. Version 2.2.3 contains a patch for this issue."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-34069",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-werkzeug: user may execute code on a developer\u0026#39;s machine"
+              },
+              "fullDescription": {
+                "text": "Werkzeug is a comprehensive WSGI web application library. The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer\u0026#39;s machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer\u0026#39;s application that will trigger the debugger. This vulnerability is fixed in 3.0.3."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-34069",
+              "help": {
+                "text": "Vulnerability CVE-2024-34069\nSeverity: HIGH\nPackage: Werkzeug\nFixed Version: 3.0.3\nLink: [CVE-2024-34069](https://avd.aquasec.com/nvd/cve-2024-34069)\nWerkzeug is a comprehensive WSGI web application library. The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger. This vulnerability is fixed in 3.0.3.",
+                "markdown": "**Vulnerability CVE-2024-34069**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Werkzeug|3.0.3|[CVE-2024-34069](https://avd.aquasec.com/nvd/cve-2024-34069)|\n\nWerkzeug is a comprehensive WSGI web application library. The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger. This vulnerability is fixed in 3.0.3."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-46136",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-werkzeug: high resource consumption leading to denial of service"
+              },
+              "fullDescription": {
+                "text": "Werkzeug is a comprehensive WSGI web application library. If an upload of a file that starts with CR or LF and then is followed by megabytes of data without these characters: all of these bytes are appended chunk by chunk into internal bytearray and lookup for boundary is performed on growing buffer. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. This vulnerability has been patched in version 3.0.1."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-46136",
+              "help": {
+                "text": "Vulnerability CVE-2023-46136\nSeverity: MEDIUM\nPackage: Werkzeug\nFixed Version: 3.0.1, 2.3.8\nLink: [CVE-2023-46136](https://avd.aquasec.com/nvd/cve-2023-46136)\nWerkzeug is a comprehensive WSGI web application library. If an upload of a file that starts with CR or LF and then is followed by megabytes of data without these characters: all of these bytes are appended chunk by chunk into internal bytearray and lookup for boundary is performed on growing buffer. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. This vulnerability has been patched in version 3.0.1.",
+                "markdown": "**Vulnerability CVE-2023-46136**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|Werkzeug|3.0.1, 2.3.8|[CVE-2023-46136](https://avd.aquasec.com/nvd/cve-2023-46136)|\n\nWerkzeug is a comprehensive WSGI web application library. If an upload of a file that starts with CR or LF and then is followed by megabytes of data without these characters: all of these bytes are appended chunk by chunk into internal bytearray and lookup for boundary is performed on growing buffer. This allows an attacker to cause a denial of service by sending crafted multipart data to an endpoint that will parse it. The amount of CPU time required can block worker processes from handling legitimate requests. This vulnerability has been patched in version 3.0.1."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.7",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-49766",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "werkzeug: python-werkzeug: Werkzeug safe_join not safe on Windows"
+              },
+              "fullDescription": {
+                "text": "Werkzeug is a Web Server Gateway Interface web application library. On Python \u0026lt; 3.11 on Windows, os.path.isabs() does not catch UNC paths like //server/share. Werkzeug\u0026#39;s safe_join() relies on this check, and so can produce a path that is not safe, potentially allowing unintended access to data. Applications using Python \u0026gt;= 3.11, or not using Windows, are not vulnerable. Werkzeug version 3.0.6 contains a patch."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-49766",
+              "help": {
+                "text": "Vulnerability CVE-2024-49766\nSeverity: MEDIUM\nPackage: Werkzeug\nFixed Version: 3.0.6\nLink: [CVE-2024-49766](https://avd.aquasec.com/nvd/cve-2024-49766)\nWerkzeug is a Web Server Gateway Interface web application library. On Python \u003c 3.11 on Windows, os.path.isabs() does not catch UNC paths like //server/share. Werkzeug's safe_join() relies on this check, and so can produce a path that is not safe, potentially allowing unintended access to data. Applications using Python \u003e= 3.11, or not using Windows, are not vulnerable. Werkzeug version 3.0.6 contains a patch.",
+                "markdown": "**Vulnerability CVE-2024-49766**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|Werkzeug|3.0.6|[CVE-2024-49766](https://avd.aquasec.com/nvd/cve-2024-49766)|\n\nWerkzeug is a Web Server Gateway Interface web application library. On Python \u003c 3.11 on Windows, os.path.isabs() does not catch UNC paths like //server/share. Werkzeug's safe_join() relies on this check, and so can produce a path that is not safe, potentially allowing unintended access to data. Applications using Python \u003e= 3.11, or not using Windows, are not vulnerable. Werkzeug version 3.0.6 contains a patch."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-49767",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "werkzeug: python-werkzeug: Werkzeug possible resource exhaustion when parsing file data in forms"
+              },
+              "fullDescription": {
+                "text": "Werkzeug is a Web Server Gateway Interface web application library. Applications using `werkzeug.formparser.MultiPartParser` corresponding to a version of Werkzeug prior to 3.0.6 to parse `multipart/form-data` requests (e.g. all flask applications) are vulnerable to a relatively simple but effective resource exhaustion (denial of service) attack. A specifically crafted form submission request can cause the parser to allocate and block 3 to 8 times the upload size in main memory. There is no upper limit; a single upload at 1 Gbit/s can exhaust 32 GB of RAM in less than 60 seconds. Werkzeug version 3.0.6 fixes this issue."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-49767",
+              "help": {
+                "text": "Vulnerability CVE-2024-49767\nSeverity: MEDIUM\nPackage: Werkzeug\nFixed Version: 3.0.6\nLink: [CVE-2024-49767](https://avd.aquasec.com/nvd/cve-2024-49767)\nWerkzeug is a Web Server Gateway Interface web application library. Applications using `werkzeug.formparser.MultiPartParser` corresponding to a version of Werkzeug prior to 3.0.6 to parse `multipart/form-data` requests (e.g. all flask applications) are vulnerable to a relatively simple but effective resource exhaustion (denial of service) attack. A specifically crafted form submission request can cause the parser to allocate and block 3 to 8 times the upload size in main memory. There is no upper limit; a single upload at 1 Gbit/s can exhaust 32 GB of RAM in less than 60 seconds. Werkzeug version 3.0.6 fixes this issue.",
+                "markdown": "**Vulnerability CVE-2024-49767**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|Werkzeug|3.0.6|[CVE-2024-49767](https://avd.aquasec.com/nvd/cve-2024-49767)|\n\nWerkzeug is a Web Server Gateway Interface web application library. Applications using `werkzeug.formparser.MultiPartParser` corresponding to a version of Werkzeug prior to 3.0.6 to parse `multipart/form-data` requests (e.g. all flask applications) are vulnerable to a relatively simple but effective resource exhaustion (denial of service) attack. A specifically crafted form submission request can cause the parser to allocate and block 3 to 8 times the upload size in main memory. There is no upper limit; a single upload at 1 Gbit/s can exhaust 32 GB of RAM in less than 60 seconds. Werkzeug version 3.0.6 fixes this issue."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-23934",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-werkzeug: cookie prefixed with = can shadow unprefixed cookie"
+              },
+              "fullDescription": {
+                "text": "Werkzeug is a comprehensive WSGI web application library. Browsers may allow \u0026#34;nameless\u0026#34; cookies that look like `=value` instead of `key=value`. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like `=__Host-test=bad` for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie `=__Host-test=bad` as __Host-test=bad`. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key. The issue is fixed in Werkzeug 2.2.3."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-23934",
+              "help": {
+                "text": "Vulnerability CVE-2023-23934\nSeverity: LOW\nPackage: Werkzeug\nFixed Version: 2.2.3\nLink: [CVE-2023-23934](https://avd.aquasec.com/nvd/cve-2023-23934)\nWerkzeug is a comprehensive WSGI web application library. Browsers may allow \"nameless\" cookies that look like `=value` instead of `key=value`. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like `=__Host-test=bad` for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie `=__Host-test=bad` as __Host-test=bad`. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key. The issue is fixed in Werkzeug 2.2.3.",
+                "markdown": "**Vulnerability CVE-2023-23934**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|Werkzeug|2.2.3|[CVE-2023-23934](https://avd.aquasec.com/nvd/cve-2023-23934)|\n\nWerkzeug is a comprehensive WSGI web application library. Browsers may allow \"nameless\" cookies that look like `=value` instead of `key=value`. A vulnerable browser may allow a compromised application on an adjacent subdomain to exploit this to set a cookie like `=__Host-test=bad` for another subdomain. Werkzeug prior to 2.2.3 will parse the cookie `=__Host-test=bad` as __Host-test=bad`. If a Werkzeug application is running next to a vulnerable or malicious subdomain which sets such a cookie using a vulnerable browser, the Werkzeug application will see the bad cookie value but the valid cookie key. The issue is fixed in Werkzeug 2.2.3."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.6",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-37920",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-certifi: Removal of e-Tugra root certificate"
+              },
+              "fullDescription": {
+                "text": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi prior to version 2023.07.22 recognizes \u0026#34;e-Tugra\u0026#34; root certificates. e-Tugra\u0026#39;s root certificates were subject to an investigation prompted by reporting of security issues in their systems. Certifi 2023.07.22 removes root certificates from \u0026#34;e-Tugra\u0026#34; from the root store."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-37920",
+              "help": {
+                "text": "Vulnerability CVE-2023-37920\nSeverity: HIGH\nPackage: certifi\nFixed Version: 2023.7.22\nLink: [CVE-2023-37920](https://avd.aquasec.com/nvd/cve-2023-37920)\nCertifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi prior to version 2023.07.22 recognizes \"e-Tugra\" root certificates. e-Tugra's root certificates were subject to an investigation prompted by reporting of security issues in their systems. Certifi 2023.07.22 removes root certificates from \"e-Tugra\" from the root store.",
+                "markdown": "**Vulnerability CVE-2023-37920**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|certifi|2023.7.22|[CVE-2023-37920](https://avd.aquasec.com/nvd/cve-2023-37920)|\n\nCertifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi prior to version 2023.07.22 recognizes \"e-Tugra\" root certificates. e-Tugra's root certificates were subject to an investigation prompted by reporting of security issues in their systems. Certifi 2023.07.22 removes root certificates from \"e-Tugra\" from the root store."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-39689",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-certifi: Remove root certificates from `GLOBALTRUST` from the root store"
+              },
+              "fullDescription": {
+                "text": "Certifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi starting in 2021.05.30 and prior to 2024.07.4 recognized root certificates from `GLOBALTRUST`. Certifi 2024.07.04 removes root certificates from `GLOBALTRUST` from the root store. These are in the process of being removed from Mozilla\u0026#39;s trust store. `GLOBALTRUST`\u0026#39;s root certificates are being removed pursuant to an investigation which identified \u0026#34;long-running and unresolved compliance issues.\u0026#34;"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-39689",
+              "help": {
+                "text": "Vulnerability CVE-2024-39689\nSeverity: LOW\nPackage: certifi\nFixed Version: 2024.07.04\nLink: [CVE-2024-39689](https://avd.aquasec.com/nvd/cve-2024-39689)\nCertifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi starting in 2021.05.30 and prior to 2024.07.4 recognized root certificates from `GLOBALTRUST`. Certifi 2024.07.04 removes root certificates from `GLOBALTRUST` from the root store. These are in the process of being removed from Mozilla's trust store. `GLOBALTRUST`'s root certificates are being removed pursuant to an investigation which identified \"long-running and unresolved compliance issues.\"",
+                "markdown": "**Vulnerability CVE-2024-39689**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|certifi|2024.07.04|[CVE-2024-39689](https://avd.aquasec.com/nvd/cve-2024-39689)|\n\nCertifi is a curated collection of Root Certificates for validating the trustworthiness of SSL certificates while verifying the identity of TLS hosts. Certifi starting in 2021.05.30 and prior to 2024.07.4 recognized root certificates from `GLOBALTRUST`. Certifi 2024.07.04 removes root certificates from `GLOBALTRUST` from the root store. These are in the process of being removed from Mozilla's trust store. `GLOBALTRUST`'s root certificates are being removed pursuant to an investigation which identified \"long-running and unresolved compliance issues.\""
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-50782",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-cryptography: Bleichenbacher timing oracle attack against RSA decryption - incomplete fix for CVE-2020-25659"
+              },
+              "fullDescription": {
+                "text": "A flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-50782",
+              "help": {
+                "text": "Vulnerability CVE-2023-50782\nSeverity: HIGH\nPackage: cryptography\nFixed Version: 42.0.0\nLink: [CVE-2023-50782](https://avd.aquasec.com/nvd/cve-2023-50782)\nA flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data.",
+                "markdown": "**Vulnerability CVE-2023-50782**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|cryptography|42.0.0|[CVE-2023-50782](https://avd.aquasec.com/nvd/cve-2023-50782)|\n\nA flaw was found in the python-cryptography package. This issue may allow a remote attacker to decrypt captured messages in TLS servers that use RSA key exchanges, which may lead to exposure of confidential or sensitive data."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-26130",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-cryptography: NULL pointer dereference with pkcs12.serialize_key_and_certificates when called with a non-matching certificate and private key and an hmac_hash override"
+              },
+              "fullDescription": {
+                "text": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4, if `pkcs12.serialize_key_and_certificates` is called with both a certificate whose public key did not match the provided private key and an `encryption_algorithm` with `hmac_hash` set (via `PrivateFormat.PKCS12.encryption_builder().hmac_hash(...)`, then a NULL pointer dereference would occur, crashing the Python process. This has been resolved in version 42.0.4, the first version in which a `ValueError` is properly raised."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-26130",
+              "help": {
+                "text": "Vulnerability CVE-2024-26130\nSeverity: HIGH\nPackage: cryptography\nFixed Version: 42.0.4\nLink: [CVE-2024-26130](https://avd.aquasec.com/nvd/cve-2024-26130)\ncryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4, if `pkcs12.serialize_key_and_certificates` is called with both a certificate whose public key did not match the provided private key and an `encryption_algorithm` with `hmac_hash` set (via `PrivateFormat.PKCS12.encryption_builder().hmac_hash(...)`, then a NULL pointer dereference would occur, crashing the Python process. This has been resolved in version 42.0.4, the first version in which a `ValueError` is properly raised.",
+                "markdown": "**Vulnerability CVE-2024-26130**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|cryptography|42.0.4|[CVE-2024-26130](https://avd.aquasec.com/nvd/cve-2024-26130)|\n\ncryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Starting in version 38.0.0 and prior to version 42.0.4, if `pkcs12.serialize_key_and_certificates` is called with both a certificate whose public key did not match the provided private key and an `encryption_algorithm` with `hmac_hash` set (via `PrivateFormat.PKCS12.encryption_builder().hmac_hash(...)`, then a NULL pointer dereference would occur, crashing the Python process. This has been resolved in version 42.0.4, the first version in which a `ValueError` is properly raised."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-49083",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-cryptography: NULL-dereference when loading PKCS7 certificates"
+              },
+              "fullDescription": {
+                "text": "cryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Calling `load_pem_pkcs7_certificates` or `load_der_pkcs7_certificates` could lead to a NULL-pointer dereference and segfault. Exploitation of this vulnerability poses a serious risk of Denial of Service (DoS) for any application attempting to deserialize a PKCS7 blob/certificate. The consequences extend to potential disruptions in system availability and stability. This vulnerability has been patched in version 41.0.6."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-49083",
+              "help": {
+                "text": "Vulnerability CVE-2023-49083\nSeverity: MEDIUM\nPackage: cryptography\nFixed Version: 41.0.6\nLink: [CVE-2023-49083](https://avd.aquasec.com/nvd/cve-2023-49083)\ncryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Calling `load_pem_pkcs7_certificates` or `load_der_pkcs7_certificates` could lead to a NULL-pointer dereference and segfault. Exploitation of this vulnerability poses a serious risk of Denial of Service (DoS) for any application attempting to deserialize a PKCS7 blob/certificate. The consequences extend to potential disruptions in system availability and stability. This vulnerability has been patched in version 41.0.6.",
+                "markdown": "**Vulnerability CVE-2023-49083**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|cryptography|41.0.6|[CVE-2023-49083](https://avd.aquasec.com/nvd/cve-2023-49083)|\n\ncryptography is a package designed to expose cryptographic primitives and recipes to Python developers. Calling `load_pem_pkcs7_certificates` or `load_der_pkcs7_certificates` could lead to a NULL-pointer dereference and segfault. Exploitation of this vulnerability poses a serious risk of Denial of Service (DoS) for any application attempting to deserialize a PKCS7 blob/certificate. The consequences extend to potential disruptions in system availability and stability. This vulnerability has been patched in version 41.0.6."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-0727",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "openssl: denial of service via null dereference"
+              },
+              "fullDescription": {
+                "text": "Issue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-0727",
+              "help": {
+                "text": "Vulnerability CVE-2024-0727\nSeverity: MEDIUM\nPackage: cryptography\nFixed Version: 42.0.2\nLink: [CVE-2024-0727](https://avd.aquasec.com/nvd/cve-2024-0727)\nIssue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue.",
+                "markdown": "**Vulnerability CVE-2024-0727**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|cryptography|42.0.2|[CVE-2024-0727](https://avd.aquasec.com/nvd/cve-2024-0727)|\n\nIssue summary: Processing a maliciously formatted PKCS12 file may lead OpenSSL\nto crash leading to a potential Denial of Service attack\n\nImpact summary: Applications loading files in the PKCS12 format from untrusted\nsources might terminate abruptly.\n\nA file in PKCS12 format can contain certificates and keys and may come from an\nuntrusted source. The PKCS12 specification allows certain fields to be NULL, but\nOpenSSL does not correctly check for this case. This can lead to a NULL pointer\ndereference that results in OpenSSL crashing. If an application processes PKCS12\nfiles from an untrusted source using the OpenSSL APIs then that application will\nbe vulnerable to this issue.\n\nOpenSSL APIs that are vulnerable to this are: PKCS12_parse(),\nPKCS12_unpack_p7data(), PKCS12_unpack_p7encdata(), PKCS12_unpack_authsafes()\nand PKCS12_newpass().\n\nWe have also fixed a similar issue in SMIME_write_PKCS7(). However since this\nfunction is related to writing data we do not consider it security significant.\n\nThe FIPS modules in 3.2, 3.1 and 3.0 are not affected by this issue."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-h4gh-qq45-vh27",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "pyca/cryptography has a vulnerable OpenSSL included in cryptography wheels"
+              },
+              "fullDescription": {
+                "text": "pyca/cryptography\u0026#39;s wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 37.0.0-43.0.0 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://openssl-library.org/news/secadv/20240903.txt.\n\nIf you are building cryptography source (\u0026#34;sdist\u0026#34;) then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://github.com/advisories/GHSA-h4gh-qq45-vh27",
+              "help": {
+                "text": "Vulnerability GHSA-h4gh-qq45-vh27\nSeverity: MEDIUM\nPackage: cryptography\nFixed Version: 43.0.1\nLink: [GHSA-h4gh-qq45-vh27](https://github.com/advisories/GHSA-h4gh-qq45-vh27)\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 37.0.0-43.0.0 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://openssl-library.org/news/secadv/20240903.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n",
+                "markdown": "**Vulnerability GHSA-h4gh-qq45-vh27**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|cryptography|43.0.1|[GHSA-h4gh-qq45-vh27](https://github.com/advisories/GHSA-h4gh-qq45-vh27)|\n\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 37.0.0-43.0.0 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://openssl-library.org/news/secadv/20240903.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-5cpq-8wj7-hf2v",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Vulnerable OpenSSL included in cryptography wheels"
+              },
+              "fullDescription": {
+                "text": "pyca/cryptography\u0026#39;s wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.5-40.0.2 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://www.openssl.org/news/secadv/20230530.txt.\n\nIf you are building cryptography source (\u0026#34;sdist\u0026#34;) then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://github.com/advisories/GHSA-5cpq-8wj7-hf2v",
+              "help": {
+                "text": "Vulnerability GHSA-5cpq-8wj7-hf2v\nSeverity: LOW\nPackage: cryptography\nFixed Version: 41.0.0\nLink: [GHSA-5cpq-8wj7-hf2v](https://github.com/advisories/GHSA-5cpq-8wj7-hf2v)\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.5-40.0.2 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://www.openssl.org/news/secadv/20230530.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+                "markdown": "**Vulnerability GHSA-5cpq-8wj7-hf2v**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|cryptography|41.0.0|[GHSA-5cpq-8wj7-hf2v](https://github.com/advisories/GHSA-5cpq-8wj7-hf2v)|\n\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.5-40.0.2 are vulnerable to a security issue. More details about the vulnerability itself can be found in https://www.openssl.org/news/secadv/20230530.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-jm77-qphf-c4w8",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "pyca/cryptography\u0026#39;s wheels include vulnerable OpenSSL"
+              },
+              "fullDescription": {
+                "text": "pyca/cryptography\u0026#39;s wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8-41.0.2 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230731.txt, https://www.openssl.org/news/secadv/20230719.txt, and https://www.openssl.org/news/secadv/20230714.txt.\n\nIf you are building cryptography source (\u0026#34;sdist\u0026#34;) then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://github.com/advisories/GHSA-jm77-qphf-c4w8",
+              "help": {
+                "text": "Vulnerability GHSA-jm77-qphf-c4w8\nSeverity: LOW\nPackage: cryptography\nFixed Version: 41.0.3\nLink: [GHSA-jm77-qphf-c4w8](https://github.com/advisories/GHSA-jm77-qphf-c4w8)\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8-41.0.2 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230731.txt, https://www.openssl.org/news/secadv/20230719.txt, and https://www.openssl.org/news/secadv/20230714.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+                "markdown": "**Vulnerability GHSA-jm77-qphf-c4w8**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|cryptography|41.0.3|[GHSA-jm77-qphf-c4w8](https://github.com/advisories/GHSA-jm77-qphf-c4w8)|\n\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8-41.0.2 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230731.txt, https://www.openssl.org/news/secadv/20230719.txt, and https://www.openssl.org/news/secadv/20230714.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "GHSA-v8gr-m533-ghj9",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Vulnerable OpenSSL included in cryptography wheels"
+              },
+              "fullDescription": {
+                "text": "pyca/cryptography\u0026#39;s wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 2.5-41.0.3 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230908.txt.\n\nIf you are building cryptography source (\u0026#34;sdist\u0026#34;) then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://github.com/advisories/GHSA-v8gr-m533-ghj9",
+              "help": {
+                "text": "Vulnerability GHSA-v8gr-m533-ghj9\nSeverity: LOW\nPackage: cryptography\nFixed Version: 41.0.4\nLink: [GHSA-v8gr-m533-ghj9](https://github.com/advisories/GHSA-v8gr-m533-ghj9)\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 2.5-41.0.3 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230908.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
+                "markdown": "**Vulnerability GHSA-v8gr-m533-ghj9**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|LOW|cryptography|41.0.4|[GHSA-v8gr-m533-ghj9](https://github.com/advisories/GHSA-v8gr-m533-ghj9)|\n\npyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 2.5-41.0.3 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230908.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-1135",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-gunicorn: HTTP Request Smuggling due to improper validation of Transfer-Encoding headers"
+              },
+              "fullDescription": {
+                "text": "Gunicorn fails to properly validate Transfer-Encoding headers, leading to HTTP Request Smuggling (HRS) vulnerabilities. By crafting requests with conflicting Transfer-Encoding headers, attackers can bypass security restrictions and access restricted endpoints. This issue is due to Gunicorn\u0026#39;s handling of Transfer-Encoding headers, where it incorrectly processes requests with multiple, conflicting Transfer-Encoding headers, treating them as chunked regardless of the final encoding specified. This vulnerability allows for a range of attacks including cache poisoning, session manipulation, and data exposure."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-1135",
+              "help": {
+                "text": "Vulnerability CVE-2024-1135\nSeverity: HIGH\nPackage: gunicorn\nFixed Version: 22.0.0\nLink: [CVE-2024-1135](https://avd.aquasec.com/nvd/cve-2024-1135)\nGunicorn fails to properly validate Transfer-Encoding headers, leading to HTTP Request Smuggling (HRS) vulnerabilities. By crafting requests with conflicting Transfer-Encoding headers, attackers can bypass security restrictions and access restricted endpoints. This issue is due to Gunicorn's handling of Transfer-Encoding headers, where it incorrectly processes requests with multiple, conflicting Transfer-Encoding headers, treating them as chunked regardless of the final encoding specified. This vulnerability allows for a range of attacks including cache poisoning, session manipulation, and data exposure.",
+                "markdown": "**Vulnerability CVE-2024-1135**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|gunicorn|22.0.0|[CVE-2024-1135](https://avd.aquasec.com/nvd/cve-2024-1135)|\n\nGunicorn fails to properly validate Transfer-Encoding headers, leading to HTTP Request Smuggling (HRS) vulnerabilities. By crafting requests with conflicting Transfer-Encoding headers, attackers can bypass security restrictions and access restricted endpoints. This issue is due to Gunicorn's handling of Transfer-Encoding headers, where it incorrectly processes requests with multiple, conflicting Transfer-Encoding headers, treating them as chunked regardless of the final encoding specified. This vulnerability allows for a range of attacks including cache poisoning, session manipulation, and data exposure."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.2",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-3651",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-idna: potential DoS via resource consumption via specially crafted inputs to idna.encode()"
+              },
+              "fullDescription": {
+                "text": "A vulnerability was identified in the kjd/idna library, specifically within the `idna.encode()` function, affecting version 3.6. The issue arises from the function\u0026#39;s handling of crafted input strings, which can lead to quadratic complexity and consequently, a denial of service condition. This vulnerability is triggered by a crafted input that causes the `idna.encode()` function to process the input with considerable computational load, significantly increasing the processing time in a quadratic manner relative to the input size."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-3651",
+              "help": {
+                "text": "Vulnerability CVE-2024-3651\nSeverity: MEDIUM\nPackage: idna\nFixed Version: 3.7\nLink: [CVE-2024-3651](https://avd.aquasec.com/nvd/cve-2024-3651)\nA vulnerability was identified in the kjd/idna library, specifically within the `idna.encode()` function, affecting version 3.6. The issue arises from the function's handling of crafted input strings, which can lead to quadratic complexity and consequently, a denial of service condition. This vulnerability is triggered by a crafted input that causes the `idna.encode()` function to process the input with considerable computational load, significantly increasing the processing time in a quadratic manner relative to the input size.",
+                "markdown": "**Vulnerability CVE-2024-3651**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|idna|3.7|[CVE-2024-3651](https://avd.aquasec.com/nvd/cve-2024-3651)|\n\nA vulnerability was identified in the kjd/idna library, specifically within the `idna.encode()` function, affecting version 3.6. The issue arises from the function's handling of crafted input strings, which can lead to quadratic complexity and consequently, a denial of service condition. This vulnerability is triggered by a crafted input that causes the `idna.encode()` function to process the input with considerable computational load, significantly increasing the processing time in a quadratic manner relative to the input size."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.2",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-32681",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-requests: Unintended leak of Proxy-Authorization header"
+              },
+              "fullDescription": {
+                "text": "Requests is a HTTP library. Since Requests 2.3.0, Requests has been leaking Proxy-Authorization headers to destination servers when redirected to an HTTPS endpoint. This is a product of how we use `rebuild_proxies` to reattach the `Proxy-Authorization` header to requests. For HTTP connections sent through the tunnel, the proxy will identify the header in the request itself and remove it prior to forwarding to the destination server. However when sent over HTTPS, the `Proxy-Authorization` header must be sent in the CONNECT request as the proxy has no visibility into the tunneled request. This results in Requests forwarding proxy credentials to the destination server unintentionally, allowing a malicious actor to potentially exfiltrate sensitive information. This issue has been patched in version 2.31.0.\n\n"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-32681",
+              "help": {
+                "text": "Vulnerability CVE-2023-32681\nSeverity: MEDIUM\nPackage: requests\nFixed Version: 2.31.0\nLink: [CVE-2023-32681](https://avd.aquasec.com/nvd/cve-2023-32681)\nRequests is a HTTP library. Since Requests 2.3.0, Requests has been leaking Proxy-Authorization headers to destination servers when redirected to an HTTPS endpoint. This is a product of how we use `rebuild_proxies` to reattach the `Proxy-Authorization` header to requests. For HTTP connections sent through the tunnel, the proxy will identify the header in the request itself and remove it prior to forwarding to the destination server. However when sent over HTTPS, the `Proxy-Authorization` header must be sent in the CONNECT request as the proxy has no visibility into the tunneled request. This results in Requests forwarding proxy credentials to the destination server unintentionally, allowing a malicious actor to potentially exfiltrate sensitive information. This issue has been patched in version 2.31.0.\n\n",
+                "markdown": "**Vulnerability CVE-2023-32681**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|requests|2.31.0|[CVE-2023-32681](https://avd.aquasec.com/nvd/cve-2023-32681)|\n\nRequests is a HTTP library. Since Requests 2.3.0, Requests has been leaking Proxy-Authorization headers to destination servers when redirected to an HTTPS endpoint. This is a product of how we use `rebuild_proxies` to reattach the `Proxy-Authorization` header to requests. For HTTP connections sent through the tunnel, the proxy will identify the header in the request itself and remove it prior to forwarding to the destination server. However when sent over HTTPS, the `Proxy-Authorization` header must be sent in the CONNECT request as the proxy has no visibility into the tunneled request. This results in Requests forwarding proxy credentials to the destination server unintentionally, allowing a malicious actor to potentially exfiltrate sensitive information. This issue has been patched in version 2.31.0.\n\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.1",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-35195",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "requests: subsequent requests to the same host ignore cert verification"
+              },
+              "fullDescription": {
+                "text": "Requests is a HTTP library. Prior to 2.32.0, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. This vulnerability is fixed in 2.32.0."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-35195",
+              "help": {
+                "text": "Vulnerability CVE-2024-35195\nSeverity: MEDIUM\nPackage: requests\nFixed Version: 2.32.0\nLink: [CVE-2024-35195](https://avd.aquasec.com/nvd/cve-2024-35195)\nRequests is a HTTP library. Prior to 2.32.0, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. This vulnerability is fixed in 2.32.0.",
+                "markdown": "**Vulnerability CVE-2024-35195**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|requests|2.32.0|[CVE-2024-35195](https://avd.aquasec.com/nvd/cve-2024-35195)|\n\nRequests is a HTTP library. Prior to 2.32.0, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. This vulnerability is fixed in 2.32.0."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.6",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-4340",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "sqlparse: parsing heavily nested list leads to denial of service"
+              },
+              "fullDescription": {
+                "text": "Passing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-4340",
+              "help": {
+                "text": "Vulnerability CVE-2024-4340\nSeverity: HIGH\nPackage: sqlparse\nFixed Version: 0.5.0\nLink: [CVE-2024-4340](https://avd.aquasec.com/nvd/cve-2024-4340)\nPassing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n",
+                "markdown": "**Vulnerability CVE-2024-4340**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|sqlparse|0.5.0|[CVE-2024-4340](https://avd.aquasec.com/nvd/cve-2024-4340)|\n\nPassing a heavily nested list to sqlparse.parse() leads to a Denial of Service due to RecursionError.\n\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-30608",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "sqlparse: Parser contains a regular expression that is vulnerable to ReDOS (Regular Expression Denial of Service)"
+              },
+              "fullDescription": {
+                "text": "sqlparse is a non-validating SQL parser module for Python. In affected versions the SQL parser contains a regular expression that is vulnerable to ReDoS (Regular Expression Denial of Service). This issue was introduced by commit `e75e358`. The vulnerability may lead to Denial of Service (DoS). This issues has been fixed in sqlparse 0.4.4 by commit `c457abd5f`. Users are advised to upgrade. There are no known workarounds for this issue.\n"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-30608",
+              "help": {
+                "text": "Vulnerability CVE-2023-30608\nSeverity: MEDIUM\nPackage: sqlparse\nFixed Version: 0.4.4\nLink: [CVE-2023-30608](https://avd.aquasec.com/nvd/cve-2023-30608)\nsqlparse is a non-validating SQL parser module for Python. In affected versions the SQL parser contains a regular expression that is vulnerable to ReDoS (Regular Expression Denial of Service). This issue was introduced by commit `e75e358`. The vulnerability may lead to Denial of Service (DoS). This issues has been fixed in sqlparse 0.4.4 by commit `c457abd5f`. Users are advised to upgrade. There are no known workarounds for this issue.\n",
+                "markdown": "**Vulnerability CVE-2023-30608**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|sqlparse|0.4.4|[CVE-2023-30608](https://avd.aquasec.com/nvd/cve-2023-30608)|\n\nsqlparse is a non-validating SQL parser module for Python. In affected versions the SQL parser contains a regular expression that is vulnerable to ReDoS (Regular Expression Denial of Service). This issue was introduced by commit `e75e358`. The vulnerability may lead to Denial of Service (DoS). This issues has been fixed in sqlparse 0.4.4 by commit `c457abd5f`. Users are advised to upgrade. There are no known workarounds for this issue.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-43804",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "python-urllib3: Cookie request header isn\u0026#39;t stripped during cross-origin redirects"
+              },
+              "fullDescription": {
+                "text": "urllib3 is a user-friendly HTTP client library for Python. urllib3 doesn\u0026#39;t treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn\u0026#39;t disable redirects explicitly. This issue has been patched in urllib3 version 1.26.17 or 2.0.5."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-43804",
+              "help": {
+                "text": "Vulnerability CVE-2023-43804\nSeverity: MEDIUM\nPackage: urllib3\nFixed Version: 2.0.6, 1.26.17\nLink: [CVE-2023-43804](https://avd.aquasec.com/nvd/cve-2023-43804)\nurllib3 is a user-friendly HTTP client library for Python. urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly. This issue has been patched in urllib3 version 1.26.17 or 2.0.5.",
+                "markdown": "**Vulnerability CVE-2023-43804**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|urllib3|2.0.6, 1.26.17|[CVE-2023-43804](https://avd.aquasec.com/nvd/cve-2023-43804)|\n\nurllib3 is a user-friendly HTTP client library for Python. urllib3 doesn't treat the `Cookie` HTTP header special or provide any helpers for managing cookies over HTTP, that is the responsibility of the user. However, it is possible for a user to specify a `Cookie` header and unknowingly leak information via HTTP redirects to a different origin if that user doesn't disable redirects explicitly. This issue has been patched in urllib3 version 1.26.17 or 2.0.5."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.9",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2023-45803",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "urllib3: Request body not stripped after redirect from 303 status changes request method to GET"
+              },
+              "fullDescription": {
+                "text": "urllib3 is a user-friendly HTTP client library for Python. urllib3 previously wouldn\u0026#39;t remove the HTTP request body when an HTTP redirect response using status 301, 302, or 303 after the request had its method changed from one that could accept a request body (like `POST`) to `GET` as is required by HTTP RFCs. Although this behavior is not specified in the section for redirects, it can be inferred by piecing together information from different sections and we have observed the behavior in other major HTTP client implementations like curl and web browsers. Because the vulnerability requires a previously trusted service to become compromised in order to have an impact on confidentiality we believe the exploitability of this vulnerability is low. Additionally, many users aren\u0026#39;t putting sensitive data in HTTP request bodies, if this is the case then this vulnerability isn\u0026#39;t exploitable. Both of the following conditions must be true to be affected by this vulnerability: 1. Using urllib3 and submitting sensitive information in the HTTP request body (such as form data or JSON) and 2. The origin service is compromised and starts redirecting using 301, 302, or 303 to a malicious peer or the redirected-to service becomes compromised. This issue has been addressed in versions 1.26.18 and 2.0.7 and users are advised to update to resolve this issue. Users unable to update should disable redirects for services that aren\u0026#39;t expecting to respond with redirects with `redirects=False` and disable automatic redirects with `redirects=False` and handle 301, 302, and 303 redirects manually by stripping the HTTP request body.\n"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2023-45803",
+              "help": {
+                "text": "Vulnerability CVE-2023-45803\nSeverity: MEDIUM\nPackage: urllib3\nFixed Version: 2.0.7, 1.26.18\nLink: [CVE-2023-45803](https://avd.aquasec.com/nvd/cve-2023-45803)\nurllib3 is a user-friendly HTTP client library for Python. urllib3 previously wouldn't remove the HTTP request body when an HTTP redirect response using status 301, 302, or 303 after the request had its method changed from one that could accept a request body (like `POST`) to `GET` as is required by HTTP RFCs. Although this behavior is not specified in the section for redirects, it can be inferred by piecing together information from different sections and we have observed the behavior in other major HTTP client implementations like curl and web browsers. Because the vulnerability requires a previously trusted service to become compromised in order to have an impact on confidentiality we believe the exploitability of this vulnerability is low. Additionally, many users aren't putting sensitive data in HTTP request bodies, if this is the case then this vulnerability isn't exploitable. Both of the following conditions must be true to be affected by this vulnerability: 1. Using urllib3 and submitting sensitive information in the HTTP request body (such as form data or JSON) and 2. The origin service is compromised and starts redirecting using 301, 302, or 303 to a malicious peer or the redirected-to service becomes compromised. This issue has been addressed in versions 1.26.18 and 2.0.7 and users are advised to update to resolve this issue. Users unable to update should disable redirects for services that aren't expecting to respond with redirects with `redirects=False` and disable automatic redirects with `redirects=False` and handle 301, 302, and 303 redirects manually by stripping the HTTP request body.\n",
+                "markdown": "**Vulnerability CVE-2023-45803**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|urllib3|2.0.7, 1.26.18|[CVE-2023-45803](https://avd.aquasec.com/nvd/cve-2023-45803)|\n\nurllib3 is a user-friendly HTTP client library for Python. urllib3 previously wouldn't remove the HTTP request body when an HTTP redirect response using status 301, 302, or 303 after the request had its method changed from one that could accept a request body (like `POST`) to `GET` as is required by HTTP RFCs. Although this behavior is not specified in the section for redirects, it can be inferred by piecing together information from different sections and we have observed the behavior in other major HTTP client implementations like curl and web browsers. Because the vulnerability requires a previously trusted service to become compromised in order to have an impact on confidentiality we believe the exploitability of this vulnerability is low. Additionally, many users aren't putting sensitive data in HTTP request bodies, if this is the case then this vulnerability isn't exploitable. Both of the following conditions must be true to be affected by this vulnerability: 1. Using urllib3 and submitting sensitive information in the HTTP request body (such as form data or JSON) and 2. The origin service is compromised and starts redirecting using 301, 302, or 303 to a malicious peer or the redirected-to service becomes compromised. This issue has been addressed in versions 1.26.18 and 2.0.7 and users are advised to update to resolve this issue. Users unable to update should disable redirects for services that aren't expecting to respond with redirects with `redirects=False` and disable automatic redirects with `redirects=False` and handle 301, 302, and 303 redirects manually by stripping the HTTP request body.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "4.2",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-37891",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "urllib3: proxy-authorization request header is not stripped during cross-origin redirects"
+              },
+              "fullDescription": {
+                "text": " urllib3 is a user-friendly HTTP client library for Python. When using urllib3\u0026#39;s proxy support with `ProxyManager`, the `Proxy-Authorization` header is only sent to the configured proxy, as expected. However, when sending HTTP requests *without* using urllib3\u0026#39;s proxy support, it\u0026#39;s possible to accidentally configure the `Proxy-Authorization` header even though it won\u0026#39;t have any effect as the request is not using a forwarding proxy or a tunneling proxy. In those cases, urllib3 doesn\u0026#39;t treat the `Proxy-Authorization` HTTP header as one carrying authentication material and thus doesn\u0026#39;t strip the header on cross-origin redirects. Because this is a highly unlikely scenario, we believe the severity of this vulnerability is low for almost all users. Out of an abundance of caution urllib3 will automatically strip the `Proxy-Authorization` header during cross-origin redirects to avoid the small chance that users are doing this on accident. Users should use urllib3\u0026#39;s proxy support or disable automatic redirects to achieve safe processing of the `Proxy-Authorization` header, but we still decided to strip the header by default in order to further protect users who aren\u0026#39;t using the correct approach. We believe the number of usages affected by this advisory is low. It requires all of the following to be true to be exploited: 1. Setting the `Proxy-Authorization` header without using urllib3\u0026#39;s built-in proxy support. 2. Not disabling HTTP redirects. 3. Either not using an HTTPS origin server or for the proxy or target origin to redirect to a malicious origin. Users are advised to update to either version 1.26.19 or version 2.2.2. Users unable to upgrade may use the `Proxy-Authorization` header with urllib3\u0026#39;s `ProxyManager`, disable HTTP redirects using `redirects=False` when sending requests, or not user the `Proxy-Authorization` header as mitigations."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-37891",
+              "help": {
+                "text": "Vulnerability CVE-2024-37891\nSeverity: MEDIUM\nPackage: urllib3\nFixed Version: 1.26.19, 2.2.2\nLink: [CVE-2024-37891](https://avd.aquasec.com/nvd/cve-2024-37891)\n urllib3 is a user-friendly HTTP client library for Python. When using urllib3's proxy support with `ProxyManager`, the `Proxy-Authorization` header is only sent to the configured proxy, as expected. However, when sending HTTP requests *without* using urllib3's proxy support, it's possible to accidentally configure the `Proxy-Authorization` header even though it won't have any effect as the request is not using a forwarding proxy or a tunneling proxy. In those cases, urllib3 doesn't treat the `Proxy-Authorization` HTTP header as one carrying authentication material and thus doesn't strip the header on cross-origin redirects. Because this is a highly unlikely scenario, we believe the severity of this vulnerability is low for almost all users. Out of an abundance of caution urllib3 will automatically strip the `Proxy-Authorization` header during cross-origin redirects to avoid the small chance that users are doing this on accident. Users should use urllib3's proxy support or disable automatic redirects to achieve safe processing of the `Proxy-Authorization` header, but we still decided to strip the header by default in order to further protect users who aren't using the correct approach. We believe the number of usages affected by this advisory is low. It requires all of the following to be true to be exploited: 1. Setting the `Proxy-Authorization` header without using urllib3's built-in proxy support. 2. Not disabling HTTP redirects. 3. Either not using an HTTPS origin server or for the proxy or target origin to redirect to a malicious origin. Users are advised to update to either version 1.26.19 or version 2.2.2. Users unable to upgrade may use the `Proxy-Authorization` header with urllib3's `ProxyManager`, disable HTTP redirects using `redirects=False` when sending requests, or not user the `Proxy-Authorization` header as mitigations.",
+                "markdown": "**Vulnerability CVE-2024-37891**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|urllib3|1.26.19, 2.2.2|[CVE-2024-37891](https://avd.aquasec.com/nvd/cve-2024-37891)|\n\n urllib3 is a user-friendly HTTP client library for Python. When using urllib3's proxy support with `ProxyManager`, the `Proxy-Authorization` header is only sent to the configured proxy, as expected. However, when sending HTTP requests *without* using urllib3's proxy support, it's possible to accidentally configure the `Proxy-Authorization` header even though it won't have any effect as the request is not using a forwarding proxy or a tunneling proxy. In those cases, urllib3 doesn't treat the `Proxy-Authorization` HTTP header as one carrying authentication material and thus doesn't strip the header on cross-origin redirects. Because this is a highly unlikely scenario, we believe the severity of this vulnerability is low for almost all users. Out of an abundance of caution urllib3 will automatically strip the `Proxy-Authorization` header during cross-origin redirects to avoid the small chance that users are doing this on accident. Users should use urllib3's proxy support or disable automatic redirects to achieve safe processing of the `Proxy-Authorization` header, but we still decided to strip the header by default in order to further protect users who aren't using the correct approach. We believe the number of usages affected by this advisory is low. It requires all of the following to be true to be exploited: 1. Setting the `Proxy-Authorization` header without using urllib3's built-in proxy support. 2. Not disabling HTTP redirects. 3. Either not using an HTTPS origin server or for the proxy or target origin to redirect to a malicious origin. Users are advised to update to either version 1.26.19 or version 2.2.2. Users unable to upgrade may use the `Proxy-Authorization` header with urllib3's `ProxyManager`, disable HTTP redirects using `redirects=False` when sending requests, or not user the `Proxy-Authorization` header as mitigations."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "4.4",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-5569",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "github.com/jaraco/zipp: Denial of Service (infinite loop) via crafted zip file in jaraco/zipp"
+              },
+              "fullDescription": {
+                "text": "A Denial of Service (DoS) vulnerability exists in the jaraco/zipp library, affecting all versions prior to 3.19.1. The vulnerability is triggered when processing a specially crafted zip file that leads to an infinite loop. This issue also impacts the zipfile module of CPython, as features from the third-party zipp library are later merged into CPython, and the affected code is identical in both projects. The infinite loop can be initiated through the use of functions affecting the `Path` module in both zipp and zipfile, such as `joinpath`, the overloaded division operator, and `iterdir`. Although the infinite loop is not resource exhaustive, it prevents the application from responding. The vulnerability was addressed in version 3.19.1 of jaraco/zipp."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-5569",
+              "help": {
+                "text": "Vulnerability CVE-2024-5569\nSeverity: MEDIUM\nPackage: zipp\nFixed Version: 3.19.1\nLink: [CVE-2024-5569](https://avd.aquasec.com/nvd/cve-2024-5569)\nA Denial of Service (DoS) vulnerability exists in the jaraco/zipp library, affecting all versions prior to 3.19.1. The vulnerability is triggered when processing a specially crafted zip file that leads to an infinite loop. This issue also impacts the zipfile module of CPython, as features from the third-party zipp library are later merged into CPython, and the affected code is identical in both projects. The infinite loop can be initiated through the use of functions affecting the `Path` module in both zipp and zipfile, such as `joinpath`, the overloaded division operator, and `iterdir`. Although the infinite loop is not resource exhaustive, it prevents the application from responding. The vulnerability was addressed in version 3.19.1 of jaraco/zipp.",
+                "markdown": "**Vulnerability CVE-2024-5569**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|zipp|3.19.1|[CVE-2024-5569](https://avd.aquasec.com/nvd/cve-2024-5569)|\n\nA Denial of Service (DoS) vulnerability exists in the jaraco/zipp library, affecting all versions prior to 3.19.1. The vulnerability is triggered when processing a specially crafted zip file that leads to an infinite loop. This issue also impacts the zipfile module of CPython, as features from the third-party zipp library are later merged into CPython, and the affected code is identical in both projects. The infinite loop can be initiated through the use of functions affecting the `Path` module in both zipp and zipfile, such as `joinpath`, the overloaded division operator, and `iterdir`. Although the infinite loop is not resource exhaustive, it prevents the application from responding. The vulnerability was addressed in version 3.19.1 of jaraco/zipp."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "6.2",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "jwt-token",
+              "name": "Secret",
+              "shortDescription": {
+                "text": "JWT token"
+              },
+              "fullDescription": {
+                "text": "xhAAKOUWMxqMnWm8BUomv0Yd; jwt=*****************************************************************************************************************************************\u0026#34;);"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://github.com/aquasecurity/trivy/blob/main/pkg/fanal/secret/builtin-rules.go",
+              "help": {
+                "text": "Secret JWT token\nSeverity: MEDIUM\nMatch: xhAAKOUWMxqMnWm8BUomv0Yd; jwt=*****************************************************************************************************************************************\");",
+                "markdown": "**Secret JWT token**\n| Severity | Match |\n| --- | --- |\n|MEDIUM|xhAAKOUWMxqMnWm8BUomv0Yd; jwt=*****************************************************************************************************************************************\");|"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "secret",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            }
+          ],
+          "version": "0.56.1"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2023-44271",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Package: Pillow\nInstalled Version: 9.4.0\nVulnerability CVE-2023-44271\nSeverity: HIGH\nFixed Version: 10.0.0\nLink: [CVE-2023-44271](https://avd.aquasec.com/nvd/cve-2023-44271)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endLine": 20,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Pillow@9.4.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-4863",
+          "ruleIndex": 1,
+          "level": "error",
+          "message": {
+            "text": "Package: Pillow\nInstalled Version: 9.4.0\nVulnerability CVE-2023-4863\nSeverity: HIGH\nFixed Version: 10.0.1\nLink: [CVE-2023-4863](https://avd.aquasec.com/nvd/cve-2023-4863)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endLine": 20,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Pillow@9.4.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50447",
+          "ruleIndex": 2,
+          "level": "error",
+          "message": {
+            "text": "Package: Pillow\nInstalled Version: 9.4.0\nVulnerability CVE-2023-50447\nSeverity: HIGH\nFixed Version: 10.2.0\nLink: [CVE-2023-50447](https://avd.aquasec.com/nvd/cve-2023-50447)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endLine": 20,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Pillow@9.4.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-56pw-mpj4-fxww",
+          "ruleIndex": 3,
+          "level": "error",
+          "message": {
+            "text": "Package: Pillow\nInstalled Version: 9.4.0\nVulnerability GHSA-56pw-mpj4-fxww\nSeverity: HIGH\nFixed Version: 10.0.1\nLink: [GHSA-56pw-mpj4-fxww](https://github.com/advisories/GHSA-56pw-mpj4-fxww)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endLine": 20,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Pillow@9.4.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-28219",
+          "ruleIndex": 4,
+          "level": "warning",
+          "message": {
+            "text": "Package: Pillow\nInstalled Version: 9.4.0\nVulnerability CVE-2024-28219\nSeverity: MEDIUM\nFixed Version: 10.3.0\nLink: [CVE-2024-28219](https://avd.aquasec.com/nvd/cve-2024-28219)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 1,
+                  "endLine": 20,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Pillow@9.4.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-20477",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: PyYAML\nInstalled Version: 5.1\nVulnerability CVE-2019-20477\nSeverity: CRITICAL\nFixed Version: 5.2\nLink: [CVE-2019-20477](https://avd.aquasec.com/nvd/cve-2019-20477)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 1,
+                  "endLine": 29,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: PyYAML@5.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-14343",
+          "ruleIndex": 6,
+          "level": "error",
+          "message": {
+            "text": "Package: PyYAML\nInstalled Version: 5.1\nVulnerability CVE-2020-14343\nSeverity: CRITICAL\nFixed Version: 5.4\nLink: [CVE-2020-14343](https://avd.aquasec.com/nvd/cve-2020-14343)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 1,
+                  "endLine": 29,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: PyYAML@5.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2020-1747",
+          "ruleIndex": 7,
+          "level": "error",
+          "message": {
+            "text": "Package: PyYAML\nInstalled Version: 5.1\nVulnerability CVE-2020-1747\nSeverity: CRITICAL\nFixed Version: 5.3.1\nLink: [CVE-2020-1747](https://avd.aquasec.com/nvd/cve-2020-1747)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 1,
+                  "endLine": 29,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: PyYAML@5.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-25577",
+          "ruleIndex": 8,
+          "level": "error",
+          "message": {
+            "text": "Package: Werkzeug\nInstalled Version: 2.1.2\nVulnerability CVE-2023-25577\nSeverity: HIGH\nFixed Version: 2.2.3\nLink: [CVE-2023-25577](https://avd.aquasec.com/nvd/cve-2023-25577)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Werkzeug@2.1.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-34069",
+          "ruleIndex": 9,
+          "level": "error",
+          "message": {
+            "text": "Package: Werkzeug\nInstalled Version: 2.1.2\nVulnerability CVE-2024-34069\nSeverity: HIGH\nFixed Version: 3.0.3\nLink: [CVE-2024-34069](https://avd.aquasec.com/nvd/cve-2024-34069)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Werkzeug@2.1.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-46136",
+          "ruleIndex": 10,
+          "level": "warning",
+          "message": {
+            "text": "Package: Werkzeug\nInstalled Version: 2.1.2\nVulnerability CVE-2023-46136\nSeverity: MEDIUM\nFixed Version: 3.0.1, 2.3.8\nLink: [CVE-2023-46136](https://avd.aquasec.com/nvd/cve-2023-46136)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Werkzeug@2.1.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-49766",
+          "ruleIndex": 11,
+          "level": "warning",
+          "message": {
+            "text": "Package: Werkzeug\nInstalled Version: 2.1.2\nVulnerability CVE-2024-49766\nSeverity: MEDIUM\nFixed Version: 3.0.6\nLink: [CVE-2024-49766](https://avd.aquasec.com/nvd/cve-2024-49766)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Werkzeug@2.1.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-49767",
+          "ruleIndex": 12,
+          "level": "warning",
+          "message": {
+            "text": "Package: Werkzeug\nInstalled Version: 2.1.2\nVulnerability CVE-2024-49767\nSeverity: MEDIUM\nFixed Version: 3.0.6\nLink: [CVE-2024-49767](https://avd.aquasec.com/nvd/cve-2024-49767)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Werkzeug@2.1.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-23934",
+          "ruleIndex": 13,
+          "level": "note",
+          "message": {
+            "text": "Package: Werkzeug\nInstalled Version: 2.1.2\nVulnerability CVE-2023-23934\nSeverity: LOW\nFixed Version: 2.2.3\nLink: [CVE-2023-23934](https://avd.aquasec.com/nvd/cve-2023-23934)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: Werkzeug@2.1.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-37920",
+          "ruleIndex": 14,
+          "level": "error",
+          "message": {
+            "text": "Package: certifi\nInstalled Version: 2022.12.7\nVulnerability CVE-2023-37920\nSeverity: HIGH\nFixed Version: 2023.7.22\nLink: [CVE-2023-37920](https://avd.aquasec.com/nvd/cve-2023-37920)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: certifi@2022.12.7"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-39689",
+          "ruleIndex": 15,
+          "level": "note",
+          "message": {
+            "text": "Package: certifi\nInstalled Version: 2022.12.7\nVulnerability CVE-2024-39689\nSeverity: LOW\nFixed Version: 2024.07.04\nLink: [CVE-2024-39689](https://avd.aquasec.com/nvd/cve-2024-39689)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: certifi@2022.12.7"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-50782",
+          "ruleIndex": 16,
+          "level": "error",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability CVE-2023-50782\nSeverity: HIGH\nFixed Version: 42.0.0\nLink: [CVE-2023-50782](https://avd.aquasec.com/nvd/cve-2023-50782)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-26130",
+          "ruleIndex": 17,
+          "level": "error",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability CVE-2024-26130\nSeverity: HIGH\nFixed Version: 42.0.4\nLink: [CVE-2024-26130](https://avd.aquasec.com/nvd/cve-2024-26130)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-49083",
+          "ruleIndex": 18,
+          "level": "warning",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability CVE-2023-49083\nSeverity: MEDIUM\nFixed Version: 41.0.6\nLink: [CVE-2023-49083](https://avd.aquasec.com/nvd/cve-2023-49083)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-0727",
+          "ruleIndex": 19,
+          "level": "warning",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability CVE-2024-0727\nSeverity: MEDIUM\nFixed Version: 42.0.2\nLink: [CVE-2024-0727](https://avd.aquasec.com/nvd/cve-2024-0727)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-h4gh-qq45-vh27",
+          "ruleIndex": 20,
+          "level": "warning",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability GHSA-h4gh-qq45-vh27\nSeverity: MEDIUM\nFixed Version: 43.0.1\nLink: [GHSA-h4gh-qq45-vh27](https://github.com/advisories/GHSA-h4gh-qq45-vh27)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-5cpq-8wj7-hf2v",
+          "ruleIndex": 21,
+          "level": "note",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability GHSA-5cpq-8wj7-hf2v\nSeverity: LOW\nFixed Version: 41.0.0\nLink: [GHSA-5cpq-8wj7-hf2v](https://github.com/advisories/GHSA-5cpq-8wj7-hf2v)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-jm77-qphf-c4w8",
+          "ruleIndex": 22,
+          "level": "note",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability GHSA-jm77-qphf-c4w8\nSeverity: LOW\nFixed Version: 41.0.3\nLink: [GHSA-jm77-qphf-c4w8](https://github.com/advisories/GHSA-jm77-qphf-c4w8)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "GHSA-v8gr-m533-ghj9",
+          "ruleIndex": 23,
+          "level": "note",
+          "message": {
+            "text": "Package: cryptography\nInstalled Version: 39.0.1\nVulnerability GHSA-v8gr-m533-ghj9\nSeverity: LOW\nFixed Version: 41.0.4\nLink: [GHSA-v8gr-m533-ghj9](https://github.com/advisories/GHSA-v8gr-m533-ghj9)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 1,
+                  "endLine": 7,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: cryptography@39.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-1135",
+          "ruleIndex": 24,
+          "level": "error",
+          "message": {
+            "text": "Package: gunicorn\nInstalled Version: 20.1.0\nVulnerability CVE-2024-1135\nSeverity: HIGH\nFixed Version: 22.0.0\nLink: [CVE-2024-1135](https://avd.aquasec.com/nvd/cve-2024-1135)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 1,
+                  "endLine": 16,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: gunicorn@20.1.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-3651",
+          "ruleIndex": 25,
+          "level": "warning",
+          "message": {
+            "text": "Package: idna\nInstalled Version: 3.4\nVulnerability CVE-2024-3651\nSeverity: MEDIUM\nFixed Version: 3.7\nLink: [CVE-2024-3651](https://avd.aquasec.com/nvd/cve-2024-3651)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 1,
+                  "endLine": 17,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: idna@3.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-32681",
+          "ruleIndex": 26,
+          "level": "warning",
+          "message": {
+            "text": "Package: requests\nInstalled Version: 2.28.2\nVulnerability CVE-2023-32681\nSeverity: MEDIUM\nFixed Version: 2.31.0\nLink: [CVE-2023-32681](https://avd.aquasec.com/nvd/cve-2023-32681)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 1,
+                  "endLine": 30,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: requests@2.28.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-35195",
+          "ruleIndex": 27,
+          "level": "warning",
+          "message": {
+            "text": "Package: requests\nInstalled Version: 2.28.2\nVulnerability CVE-2024-35195\nSeverity: MEDIUM\nFixed Version: 2.32.0\nLink: [CVE-2024-35195](https://avd.aquasec.com/nvd/cve-2024-35195)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 1,
+                  "endLine": 30,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: requests@2.28.2"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-4340",
+          "ruleIndex": 28,
+          "level": "error",
+          "message": {
+            "text": "Package: sqlparse\nInstalled Version: 0.3.1\nVulnerability CVE-2024-4340\nSeverity: HIGH\nFixed Version: 0.5.0\nLink: [CVE-2024-4340](https://avd.aquasec.com/nvd/cve-2024-4340)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 1,
+                  "endLine": 32,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: sqlparse@0.3.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-30608",
+          "ruleIndex": 29,
+          "level": "warning",
+          "message": {
+            "text": "Package: sqlparse\nInstalled Version: 0.3.1\nVulnerability CVE-2023-30608\nSeverity: MEDIUM\nFixed Version: 0.4.4\nLink: [CVE-2023-30608](https://avd.aquasec.com/nvd/cve-2023-30608)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 1,
+                  "endLine": 32,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: sqlparse@0.3.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-43804",
+          "ruleIndex": 30,
+          "level": "warning",
+          "message": {
+            "text": "Package: urllib3\nInstalled Version: 1.26.9\nVulnerability CVE-2023-43804\nSeverity: MEDIUM\nFixed Version: 2.0.6, 1.26.17\nLink: [CVE-2023-43804](https://avd.aquasec.com/nvd/cve-2023-43804)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 1,
+                  "endLine": 33,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: urllib3@1.26.9"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2023-45803",
+          "ruleIndex": 31,
+          "level": "warning",
+          "message": {
+            "text": "Package: urllib3\nInstalled Version: 1.26.9\nVulnerability CVE-2023-45803\nSeverity: MEDIUM\nFixed Version: 2.0.7, 1.26.18\nLink: [CVE-2023-45803](https://avd.aquasec.com/nvd/cve-2023-45803)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 1,
+                  "endLine": 33,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: urllib3@1.26.9"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-37891",
+          "ruleIndex": 32,
+          "level": "warning",
+          "message": {
+            "text": "Package: urllib3\nInstalled Version: 1.26.9\nVulnerability CVE-2024-37891\nSeverity: MEDIUM\nFixed Version: 1.26.19, 2.2.2\nLink: [CVE-2024-37891](https://avd.aquasec.com/nvd/cve-2024-37891)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 1,
+                  "endLine": 33,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: urllib3@1.26.9"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-5569",
+          "ruleIndex": 33,
+          "level": "warning",
+          "message": {
+            "text": "Package: zipp\nInstalled Version: 3.8.0\nVulnerability CVE-2024-5569\nSeverity: MEDIUM\nFixed Version: 3.19.1\nLink: [CVE-2024-5569](https://avd.aquasec.com/nvd/cve-2024-5569)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "requirements.txt",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 1,
+                  "endLine": 36,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "requirements.txt: zipp@3.8.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "jwt-token",
+          "ruleIndex": 34,
+          "level": "warning",
+          "message": {
+            "text": "Artifact: introduction/static/js/a9.js\nType: \nSecret JWT token\nSeverity: MEDIUM\nMatch: xhAAKOUWMxqMnWm8BUomv0Yd; jwt=*****************************************************************************************************************************************\");"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "introduction/static/js/a9.js",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 1,
+                  "endLine": 18,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "introduction/static/js/a9.js"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "jwt-token",
+          "ruleIndex": 34,
+          "level": "warning",
+          "message": {
+            "text": "Artifact: introduction/static/js/a7.js\nType: \nSecret JWT token\nSeverity: MEDIUM\nMatch: xhAAKOUWMxqMnWm8BUomv0Yd; jwt=*****************************************************************************************************************************************\");"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "introduction/static/js/a7.js",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "introduction/static/js/a7.js"
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///home/runner/work/assignment-8-code-scanning/assignment-8-code-scanning/"
+        }
+      }
+    }
+  ]
+}
